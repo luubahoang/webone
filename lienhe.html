@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi-vn">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang Chủ</title>
+    <link
+      href="./images/favicon.ico"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="trangchu.css" />
+  </head>
+  <body>
+    <header>
+      <img id="header-img1" src="./images/header-img1.png" alt="" />
+      <img id="header-img2" src="./images/header-img2.png" alt="" />
+      <img id="header-img3" src="./images/header-img3.png" alt="" />
+      <a id="#top" href="trangchu.html"
+      ><img src="./images/logo.png" alt=""
+    /></a>
+      <nav>
+        <a href="trangchu.html">Trang Chủ</a>
+        <a href="gioithieu.html">Giới Thiệu</a>
+        <a href="sanpham.html">Sản Phẩm</a>
+        <a href="tintuc.html">Tin Tức</a>
+        <a href="dangnhap.html">Đăng Nhập</a>
+        <a href="dangky.html">Đăng Ký</a>
+        <a href="lienhe.html">Liên Hệ</a>
+        <div class="search-container">
+          <form method="get" action="#">
+            <div class="input-container">
+              <input
+                id="search"
+                class="search-input"
+                type="text"
+                placeholder="Nhập nội dung cần 
+tìm..."
+                name="search"
+              />
+              <i class="fa fa-search icon-white"></i>
+              <i class="fa fa-shopping-cart icon-pink"></i>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="one-col">
+      <h1>Liên hệ</h1>
+      <p>
+        <span class="map-icon"><i class="fa fa-map-marker"></i></span>
+        <b>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</b>
+        Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu
+        mẫu bên dưới. Xin cám ơn.
+      </p>
+      <form
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+        onsubmit="return ctValidate(this);"
+      >
+        <h1>Góp ý</h1>
+        <div>
+          <label for="name" class="form-icons"
+            ><i class="fa fa-user"></i
+          ></label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Vui lòng nhập Họ tên của bạn"
+            required
+          />
+        </div>
+        <div>
+          <label for="email" class="form-icons"
+            ><i class="fa fa-envelope"></i
+          ></label>
+          <input
+            id="email"
+            type="text"
+            name="email"
+            placeholder="Vui lòng nhập địa chỉ Email"
+            required
+          />
+        </div>
+        <div>
+          <label class="form-icons"><i class="fa fa-list"></i></label>
+          <select size="1">
+            <option>Về Sảm Phẩm/ Dịch Vụ</option>
+            <option>Về Ưu Đãi Thành Viên</option>
+            <option>Về Tin Tuyển Dụng</option>
+          </select>
+        </div>
+        <div>
+          <label for="details" class="form-icons"
+            ><i class="fa fa-sticky-note"></i
+          ></label>
+          <textarea
+            id="details"
+            rows="7"
+            cols="50"
+            type="text"
+            name="details"
+            placeholder="Nội dung cần liên hệ"
+            required
+          ></textarea>
+        </div>
+        <input type="submit" value="Gửi" />
+      </form>
+    </main>
+    <footer>
+      &#169; Bản quyền thuộc về Luu Ba Hoang.
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+      <a href="#logo" class="anhtop"
+        ><img src="./images/top.png" width="50px"
+      /></a>
+    </footer>
+  </body>
+</html>

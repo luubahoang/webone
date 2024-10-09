@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sản Phẩm</title>
+    <link
+      href="./images/favicon.ico"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="trangchu.css" />
+  </head>
+
+  <body>
+    <header>
+      <img id="header-img1" src="./images/header-img1.png" alt="" />
+      <img id="header-img2" src="./images/header-img2.png" alt="" />
+      <img id="header-img3" src="./images/header-img3.png" alt="" />
+      <a id="#top" href="trangchu.html"
+        ><img src="./images/logo.png" alt=""
+      /></a>
+      <nav>
+        <a href="trangchu.html">Trang Chủ</a>
+        <a href="gioithieu.html">Giới Thiệu</a>
+        <a href="sanpham.html">Sản Phẩm</a>
+        <a href="tintuc.html">Tin Tức</a>
+        <a href="dangnhap.html">Đăng Nhập</a>
+        <a href="dangky.html">Đăng Ký</a>
+        <a href="lienhe.html">Liên Hệ</a>
+        <div class="search-container">
+          <form method="get" action="#">
+            <div class="input-container">
+              <input
+                id="search"
+                class="search-input"
+                type="text"
+                placeholder="Nhập nội dung cần 
+  tìm..."
+                name="search"
+              />
+              <i class="fa fa-search icon-white"></i>
+              <i class="fa fa-shopping-cart icon-pink"></i>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="one-col">
+      <article>
+        <h1>Sản Phẩm Truyền Thống</h1>
+        <section class="products">
+          <div>
+            <img src="../images/sanpham/kiwi.jpg" alt="" />
+            <h1>Sữa Chua Vị Kiwi</h1>
+            <p>
+              Hương vị thơm ngon của trái Kiwi xanh, nổi tiếng của đất nước New
+              Zealand có trong Sữa chua vị Kiwi xanh đem đến một món ăn nhẹ Siêu
+              ngon và tốt cho hệ tiêu hóa.
+              <a href="sanpham.html">Xem chi tiết</a>
+              <span>
+                Số lượng:
+                <input
+                  id="sp001"
+                  type="number"
+                  max="100"
+                  min="0"
+                  value="0"
+                  size="3"
+                />
+                <button onclick="addCart('sp001')">Đặt hàng</button>
+              </span>
+            </p>
+          </div>
+
+          <div>
+            <img src="../images/sanpham/mango.jpg" alt="" />
+            <h1>Sữa Chua Vị Xoài</h1>
+            <p>
+              Sữa chua xoài thích hợp cho mọi lứa tuổi, vì vậy hãy để cả gia
+              đình quây quần bên nhau cùng thưởng thức món ăn thơm ngon, bổ
+              dưỡng này.
+              <a href="sanpham.html">Xem chi tiết</a>
+              <span>
+                Số lượng:
+                <input
+                  id="sp001"
+                  type="number"
+                  max="100"
+                  min="0"
+                  value="0"
+                  size="3"
+                />
+                <button onclick="addCart('sp001')">Đặt hàng</button>
+              </span>
+            </p>
+          </div>
+
+          <div>
+            <img src="../images/sanpham/pineapple.jpg" alt="" />
+            <h1>Sữa Chua Vị Dưa Lưới</h1>
+            <p>
+              Trong dưa lưới chứa rất nhiều vitamin C có tác dụng làm đẹp da
+              hiệu quả. Phụ nữ ăn sinh tổ dưa lưới thường xuyên sẽ có làn da mịn
+              màng.
+              <a href="sanpham.html">Xem chi tiết</a>
+              <span>
+                Số lượng:
+                <input
+                  id="sp001"
+                  type="number"
+                  max="100"
+                  min="0"
+                  value="0"
+                  size="3"
+                />
+                <button onclick="addCart('sp001')">Đặt hàng</button>
+              </span>
+            </p>
+          </div>
+        </section>
+        <h1>Sản Phảm Mới</h1>
+        <section class="products">
+          <div>
+            <img src="../images/sanpham/strawberry.jpg" alt="" />
+            <h2>Sữa Chua Vị Mâm Xôi</h2>
+            <p>
+              Quả mâm xôi là loại quả ăn họ hoa hồng, có nguồn gốc từ châu Âu,
+              Bắc Á và được trồng ở các vùng ôn đới trên toàn thế giới. Có nhiều
+              loại, bao gồm đen, tim và vàng.
+              <a href="sanpham.html">Xem chi tiết</a>
+              <span>
+                Số lượng:
+                <input
+                  id="sp001"
+                  type="number"
+                  max="100"
+                  min="0"
+                  value="0"
+                  size="3"
+                />
+                <button onclick="addCart('sp001')">Đặt hàng</button>
+              </span>
+            </p>
+          </div>
+
+          <div>
+            <img src="../images/sanpham/blackberry.jpg" alt="" />
+            <h2>Sữa Chua Vị Dâu Tây</h2>
+            <p>
+              Dâu tây là một loài cây thân tháo có thân ngắn và các chiếc lá mọc
+              gần với nhau. Lá có nhiều gai, bề mặt lá có nhiều lông tơ và kích
+              thước lá có thể khác nhau ở từng giống.
+              <a href="sanpham.html">Xem chi tiết</a>
+              <span>
+                Số lượng:
+                <input
+                  id="sp001"
+                  type="number"
+                  max="100"
+                  min="0"
+                  value="0"
+                  size="3"
+                />
+                <button onclick="addCart('sp001')">Đặt hàng</button>
+              </span>
+            </p>
+          </div>
+
+          <div>
+            <img src="../images/sanpham/blueberry.jpg" alt="" />
+            <h2>Sữa Chua Vị Việt Quốc</h2>
+            <p>
+              Quả việt quất chứa các dưỡng chất tốt cho sức khỏe như chất xơ,
+              kali, folate, vitamin C và vitamin B6 (những chất hỗ trợ rất tốt
+              cho sức khỏe của tim).
+              <a href="sanpham.html">Xem chi tiết</a>
+              <span>
+                Số lượng:
+                <input
+                  id="sp001"
+                  type="number"
+                  max="100"
+                  min="0"
+                  value="0"
+                  size="3"
+                />
+                <button onclick="addCart('sp001')">Đặt hàng</button>
+              </span>
+            </p>
+          </div>
+        </section>
+
+        <h1>Sản phẩm trái cây nhiệt đới</h1>
+        <section class="products">
+          <div>
+            <img src="../images/sanpham/grapes.jpg" alt="" />
+            <h2>Sữa Chua Vị Bưởi</h2>
+            <p>
+              Bưởi là một loại quả thuộc chỉ Cam chanh có nguồn gốc từ Đông Nam
+              Á. Bưởi tiếng Anh gọi là Pomelo, tuy nhiên nhiều từ điền ở Việt
+              Nam lại dịch thành grapefruit.
+              <a href="sanpham.html">Xem chi tiết</a>
+              <span>
+                Số lượng:
+                <input
+                  id="sp001"
+                  type="number"
+                  max="100"
+                  min="0"
+                  value="0"
+                  size="3"
+                />
+                <button onclick="addCart('sp001')">Đặt hàng</button>
+              </span>
+            </p>
+          </div>
+
+          <div>
+            <img src="../images/sanpham/green-apple.jpg" alt="" />
+            <h2>Sữa Chua Vị Táo Xanh</h2>
+            <p>
+              Táo xanh có hàm lượng chất xơ cao giúp tăng cường quá trình trao
+              đổi chất của cơ thể. Bên cạnh đó, chất xơ còn giúp quá trình giải
+              độc gan và hệ tiêu hóa.
+              <a href="sanpham.html">Xem chi tiết</a>
+              <span>
+                Số lượng:
+                <input
+                  id="sp001"
+                  type="number"
+                  max="100"
+                  min="0"
+                  value="0"
+                  size="3"
+                />
+                <button onclick="addCart('sp001')">Đặt hàng</button>
+              </span>
+            </p>
+          </div>
+
+          <div>
+            <img src="../images/sanpham/cantaloupe.jpg" alt="" />
+            <h2>Sữa Chua Vị Dứa</h2>
+            <p>
+              Dứa có các tên gọi khác như là khóm, thơm, khóm, gai hoặc huyền
+              nương. Đây là một loại quả nhiệt đới. Dứa là cây bản địa của các
+              nước Nam Mỹ.
+              <a href="sanpham.html">Xem chi tiết</a>
+              <span>
+                Số lượng:
+                <input
+                  id="sp001"
+                  type="number"
+                  max="100"
+                  min="0"
+                  value="0"
+                  size="3"
+                />
+                <button onclick="addCart('sp001')">Đặt hàng</button>
+              </span>
+            </p>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      &#169; Bản quyền thuộc về Luu Ba Hoang.
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+      <a href="#logo" class="anhtop"
+        ><img src="./images/top.png" width="50px"
+      /></a>
+    </footer>
+  </body>
+</html>
