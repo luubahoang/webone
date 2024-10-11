@@ -307,9 +307,28 @@ section.products span {
 
 form {
   margin: auto;
-  
 }
-.khoitong1{
+.khoitong1 {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+.a1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.a2{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: 
+  "aa bb"
+}
+.a2a{
+  grid-area: bb;
+}
+.a2b{
+  grid-area: aa;
+}
+/* .chu1{
+  font-size: 20px;
+  font-weight: 50px;
+}  */
